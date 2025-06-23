@@ -1,0 +1,33 @@
+
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true, // Crucial: tsc only type-checks, Vite handles .js output
+    "jsx": "react-jsx",
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    
+    /* Path Aliases */
+    "baseUrl": ".", // Project root
+    "paths": {
+      "@/*": ["./*"] // Example: if you decide to use @/components/*
+    }
+  },
+  "include": ["."], // Include all files in the root directory for compilation
+  "exclude": ["vite.config.ts", "dist", "node_modules"],
+  "references": [{ "path": "./tsconfig.node.json" }] // For vite.config.ts
+}

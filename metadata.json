@@ -1,0 +1,6 @@
+{
+  "name": "getmyemogi",
+  "description": "getmyemogi: A comprehensive emoji encyclopedia allowing users to browse, search, and copy emojis. Uses OpenMoji for a rich emoji library. Site is in English.",
+  "requestFramePermissions": [],
+  "prompt": ""
+}

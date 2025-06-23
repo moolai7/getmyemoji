@@ -1,0 +1,12 @@
+/* Tailwind CSS is loaded via CDN in index.html, so this file can contain any additional custom styles */
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.3s ease-out;
+}
+
+/* Additional custom styles can be added here */
